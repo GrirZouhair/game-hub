@@ -1,10 +1,10 @@
-import useGenres from "@/hooks/useGenres"
+import useGenres from "@/hooks/useGenres";
 
 const GenreGrid = () => {
-    const {genres} = useGenres();
+    const {data} = useGenres();
     return (
     <div>
-      {genres.map((val) => (
+      {data.map((val) => (
         <li key={val.id}>{val.name}</li>
       ))}
     </div>
