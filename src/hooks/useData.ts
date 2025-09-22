@@ -22,7 +22,7 @@ const useData = <T>(endpoint: string) => {
             setErr(err.message);
             return() => controller.abort();
         })
-    });
+    }, []);
     return {data, err}
 }
 
