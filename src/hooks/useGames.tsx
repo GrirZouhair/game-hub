@@ -10,7 +10,8 @@ export interface Games {
     id: number,
     name: string,
     background_image: string,
-    parent_platforms: Parent_platform[]
+    parent_platforms: Parent_platform[],
+    metacritic: number
 }
 
 interface FetchedGameResponse {
