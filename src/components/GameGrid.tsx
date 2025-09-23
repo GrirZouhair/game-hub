@@ -6,7 +6,7 @@ import GameCardSkeleton from "./GameCardSkeleton";
 
 const GameGrid = () => {
   const { data, err , isLoading} = useGames();
-  const skeletons = [1,2,3,4,5,6,];
+  const skeletons = [1, 2, 3, 4, 5, 6, 7, 8];
 
   if (err) return <Text color="red.400">{err}</Text>;
 

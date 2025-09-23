@@ -1,9 +1,10 @@
 import useGenres from "@/hooks/useGenres";
-import { HStack, Text, Image, Flex, SimpleGrid, Box } from "@chakra-ui/react";
+import { HStack, Text, Image, Flex, SimpleGrid, Box, Spinner } from "@chakra-ui/react";
 
 const GenreGridStacked = () => {
-  const { data } = useGenres();
+  const { data , isLoading} = useGenres();
 
+  if (isLoading) return <Spinner />
   return (
     <Flex 
       direction="column" 

@@ -1,9 +1,10 @@
 import useGenres from "@/hooks/useGenres";
-import { VStack, HStack, Text, Image, Box } from "@chakra-ui/react";
+import { VStack, HStack, Text, Image, Box, Spinner } from "@chakra-ui/react";
 
 const GenreGrid = () => {
-  const { data } = useGenres();
+  const { data, isLoading } = useGenres();
 
+  if (isLoading) return <Spinner />
   return (
     <VStack align="stretch" >
       {data.map((genre) => (

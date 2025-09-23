@@ -7,12 +7,12 @@ interface Props{
 const GameCardSkeleton = ({key}: Props) => {
   return (
     // for image skeleton
-    <Stack  key={key}>
-        <HStack width="full">
-            <SkeletonCircle  />
+    <Stack key={key}>
+        <HStack  width="full">
+            <SkeletonCircle size="10" />
             <SkeletonText />
         </HStack>
-        <Skeleton height="200px" />
+        <Skeleton height="200px" borderRadius="md"  />
     </Stack>
   )
 }
