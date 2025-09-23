@@ -7,9 +7,7 @@ const NavBar = () => {
     <Box 
       bg="white" 
       boxShadow="sm"
-      _dark={{
-        bg: "gray.800"
-      }}
+      backgroundColor={'#1f1f1f'}
     >
         <HStack 
         px={{ base: 4, md: 6, lg: 8 }} 
