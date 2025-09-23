@@ -5,9 +5,7 @@ import ThemeToggle from './ThemeToggle.tsx'
 const NavBar = () => {
   return (
     <Box 
-      bg="white" 
-      boxShadow="sm"
-      backgroundColor={'#1f1f1f'}
+      bg="#1B2430"
     >
         <HStack 
         px={{ base: 4, md: 6, lg: 8 }} 
